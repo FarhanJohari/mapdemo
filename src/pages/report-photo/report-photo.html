@@ -1,0 +1,112 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons left>
+            <button ion-button icon-only color="royal">
+                <ion-icon name="ios-call"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title left>MM-SOS HOTLINE</ion-title>
+        <ion-buttons right class="setting-button">
+            <button ion-button icon-only color="royal">
+        <ion-icon name="ios-settings"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content padding>
+    <div class="first-container">
+        <div class="text-center">
+            <img src="assets/icon/newicon/photos.jpg" width="30%">
+        </div>
+        <div>
+            <div class="color-theme text-center"><strong><h5>EMERGENCY PHOTO</h5></strong></div>
+        </div>
+
+        <ion-item class="text-overflow-false" style="padding-left: 10%; padding-right:10%; margin-bottom: 10px;">
+            <ion-label class="text-overflow-false">Add last known location in email / message?</ion-label>
+            <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+        </ion-item>
+    </div>
+    <div class="second-container">
+        <ion-list>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4 style="border: 1px solid #4f4f4f">
+                        <img src="assets/imgs/logo.png">
+                    </ion-col>
+                    <ion-col col-6 class="centering-flex">
+                        <div>
+                            Taken on 21/10/2017 Location: Raja Chulan
+                        </div>
+                    </ion-col>
+                    <ion-col col-2>
+                        <ion-row style="height: 50%" class="centering-flex">
+                            <div><img src="assets/icon/newicon/tick.png" width="60%"></div>
+                        </ion-row>
+                        <ion-row style="height: 50%" class="centering-flex">
+                            <div><img src="assets/icon/newicon/thrash.png" width="60%"></div>
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4 style="border: 1px solid #4f4f4f">
+                        <img src="assets/imgs/logo.png">
+                    </ion-col>
+                    <ion-col col-6 class="centering-flex">
+                        <div>
+                            Taken on 21/10/2017 Location: Raja Chulan
+                        </div>
+                    </ion-col>
+                    <ion-col col-2>
+                        <ion-row style="height: 50%" class="centering-flex">
+                            <div><img src="assets/icon/newicon/tick1.png" width="60%"></div>
+                        </ion-row>
+                        <ion-row style="height: 50%" class="centering-flex">
+                            <div><img src="assets/icon/newicon/thrash.png" width="60%"></div>
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4 style="border: 1px solid #4f4f4f">
+                        <img src="assets/imgs/logo.png">
+                    </ion-col>
+                    <ion-col col-6 class="centering-flex">
+                        <div>
+                            Taken on 21/10/2017 Location: Raja Chulan
+                        </div>
+                    </ion-col>
+                    <ion-col col-2>
+                        <ion-row style="height: 50%" class="centering-flex">
+                            <div><img src="assets/icon/newicon/tick1.png" width="60%"></div>
+                        </ion-row>
+                        <ion-row style="height: 50%" class="centering-flex">
+                            <div><img src="assets/icon/newicon/thrash.png" width="60%"></div>
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-list>
+    </div>
+</ion-content>
+<ion-footer transparent no-border>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <button ion-button block style="width: 100%;" class="margin-center button-second-theme" (tap)="actionGoToForm()">ADD PHOTO</button>
+            </ion-col>
+            <ion-col>
+                <button ion-button block style="width: 100%;" class="margin-center button-second-theme" (tap)="actionGoToForm()">EDIT URGENT MESSAGE</button>
+            </ion-col>
+        </ion-row>
+        <ion-row style="padding: 5px;">
+            <button ion-button block style="width: 100%;" class="margin-center button-theme" (tap)="actionGoToForm()">SEND SELECTED PHOTOS</button>
+        </ion-row>
+    </ion-grid>
+
+
+
+</ion-footer>

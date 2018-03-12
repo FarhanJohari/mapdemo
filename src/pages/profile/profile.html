@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons left>
+            <button ion-button icon-only color="royal">
+                <ion-icon name="ios-call"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title left>MM-SOS HOTLINE</ion-title>
+        <ion-buttons right class="setting-button">
+            <button ion-button icon-only color="royal">
+        <ion-icon name="ios-settings"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content padding>
+    <div class="first-container">
+        <div class="text-center">
+            <img src="assets/icon/newicon/imageprofile.png" width="25%" *ngIf="!image" (tap)="actionTakePhoto()">
+            <img src="{{image}}" width="25%" *ngIf="image" (tap)="actionTakePhoto()">
+        </div>
+        <div>
+            <div class="color-theme text-center"><strong><h5>USER PROFILE</h5></strong></div>
+        </div>
+        <div class="text-center">
+            <img class="text-center" src="assets/icon/qrcode.jpg" width="35%">
+        </div>
+        <div class="text-center">
+            <div class="text-center">
+                <h5>MY QR CODE</h5>
+            </div>
+        </div>
+    </div>
+    <div class="second-container">
+        <ion-grid>
+            <ion-row>
+                <ion-col col-4 class="text-center">
+                    <img src="assets/icon/newicon/nric.jpg" width="60%;">
+                    <div class="text-center grey-grid-theme">USER<br>PROFILE</div>
+                </ion-col>
+                <ion-col col-4 class="text-center">
+                    <img src="assets/icon/newicon/account.jpg" width="60%;">
+                    <div class="text-center grey-grid-theme">MY<br>ACCOUNT</div>
+                </ion-col>
+                <ion-col col-4 class="text-center">
+                    <img src="assets/icon/newicon/emergencycontact.jpg" width="60%;">
+                    <div class="text-center grey-grid-theme">EMERGENCY<br>CONTACTS</div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-4 class="text-center" (tap)="actionGotoPhoto()">
+                    <img src="assets/icon/newicon/photos.jpg" width="60%;">
+                    <div class="text-center grey-grid-theme">EMERGENCY<br>PHOTO</div>
+                </ion-col>
+                <ion-col col-4 class="text-center">
+                    <img src="assets/icon/newicon/appinfo.jpg" width="60%;">
+                    <div class="text-center grey-grid-theme">APP<br>INFO</div>
+                </ion-col>
+                <ion-col col-4 class="text-center">
+                    <img src="assets/icon/newicon/help.jpg" width="60%;">
+                    <div class="text-center grey-grid-theme"><br>HELP</div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>
+

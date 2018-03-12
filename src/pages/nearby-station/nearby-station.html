@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons left>
+            <button ion-button icon-only color="royal">
+                <ion-icon name="ios-call"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title left>MM-SOS HOTLINE</ion-title>
+        <ion-buttons right class="setting-button">
+            <button ion-button icon-only color="royal">
+        <ion-icon name="ios-settings"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+    <div class="text-center">
+        <img src="assets/icon/ambulance.png" *ngIf="index == 0" width="40%">
+        <img src="assets/icon/police.png" width="40%" *ngIf="index == 1">
+        <img src="assets/icon/fire.png" width="40%" *ngIf="index == 2">
+        <img src="assets/icon/counseling.png" width="40%" *ngIf="index == 3">
+        <div class="color-theme">
+            <h3>{{title}}</h3>
+        </div>
+    </div>
+    <ion-card *ngFor="let item of items; let $index = index">
+        <ion-card-header *ngIf="$index<3">
+            <div><strong>{{item.item.name}}</strong></div>
+        </ion-card-header>
+        <ion-card-content *ngIf="$index<3">
+            <div>
+                <h4 style="margin: 0"></h4>
+            </div>
+            <div>
+                <div style="font-size: 1.2em; margin-bottom: 10px;">{{item.item.formatted_address}}</div>
+            </div>
+            <div>
+                <div class="text-center" style="display: inline-block; width: 50%; font-size: 1.2em; border-right: 1px solid #4e4e4e">
+                    <ion-icon name="ios-pin-outline"></ion-icon>&nbsp;{{item.distances.distance.text}}</div
+                ><div class="text-center" style="display: inline-block; width: 50%; font-size: 1.2em"><ion-icon name="ios-alarm-outline"></ion-icon>&nbsp;{{item.distances.duration.text}}</div>
+            </div>
+            <button ion-button block style="width: 100%; margin-top: 10px" class="margin-center button-theme" (tap)="actionGoToForm()"> <ion-icon name="ios-call">  {{item.item.formatted_phone_number}}</ion-icon></button>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

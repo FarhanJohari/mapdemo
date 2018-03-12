@@ -1,0 +1,28 @@
+page-main {
+    .address-card {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .first-card {
+        background: #D71E2F;
+        padding: 15px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .second-card {
+        padding: 10px;
+        padding-bottom: 0;
+        background: #efefef;
+    }
+    .height-grid {
+        margin-top: 10px;
+        height: 55px;
+    }
+    [col-4]{
+        padding: 0 !important;
+        padding: 1px !important;
+    }
+}

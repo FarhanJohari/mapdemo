@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title left>PANIC BUTTON</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="text-center" padding><strong>PLEASE LET US KNOW YOUR EMERGENCY</strong></div>
+    <div class="centering-flex">
+        <img src="assets/icon/modalsetofficon/mainicon.png" width="45%">
+    </div>
+    <div class="text-center" style="margin-top: 10px;">PANIC BUTTON WILL SET OFF IN</div>
+    <div class="text-center time-font"><strong>10 SECONDS</strong></div>
+    <div>
+        <ion-grid>
+            <ion-row>
+                <ion-col col-3 class="label-font text-center">
+                    <img src="assets/icon/modalsetofficon/crime.png" width="100%">
+                    <div class="label-background centering-flex">CRIME</div>
+                </ion-col>
+                <ion-col col-3 class="label-font text-center">
+                    <img src="assets/icon/modalsetofficon/ambulance.png" width="100%">
+                    <div class="label-background centering-flex">AMBULANCE</div>
+                </ion-col>
+                <ion-col col-3 class="label-font text-center">
+                    <img src="assets/icon/modalsetofficon/fire.png" width="100%">
+                    <div class="label-background centering-flex">FIRE</div>
+                </ion-col>
+                <ion-col col-3 class="label-font text-center">
+                    <img src="assets/icon/modalsetofficon/motoring.png" width="100%">
+                    <div class="label-background centering-flex">MOTORING</div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <button ion-button block style="width: 65%; margin-top: 20px;" class="margin-center button-theme" (tap)="actionGoToMap()">SET OFF NOW</button>
+    <button ion-button block style="width: 65%; margin-top: 10px;" class="margin-center cancel-button" (tap)="closeModal()">CANCEL</button>
+</ion-content>

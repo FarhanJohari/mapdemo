@@ -1,0 +1,160 @@
+.text-center {
+    text-align: center;
+}
+
+.margin-center {
+    margin: 0 auto;
+}
+
+.color-theme {
+    color: #D71E2F !important;
+}
+
+.button-theme {
+    background: #D71E2F !important;
+}
+
+.button-second-theme {
+    background: #4E4E4E !important
+}
+
+.text-overflow-false{
+    white-space: normal !important;
+}
+
+
+page-main,
+page-benefit,
+page-benefit-form,
+page-profile,
+page-report-photo,
+page-nearby-station{
+    .toolbar-background-md {
+        background: #4E4E4E;
+    }
+    .toolbar-title-md {
+        color: white;
+    }
+    .bar-button-default-md,
+    .bar-button-clear-md-default,
+    .bar-button-md-default {
+        color: white
+    }
+    .setting-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #1a1a1a;
+        width: 60px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+ion-modal.my-popup {
+    @media (min-width: 300px) and (min-height: 500px) {
+        ion-backdrop {
+            visibility: visible;
+        }
+    } //    @media (max-width: 320px) {
+    //        .toolbar-title-md,
+    //        .toolbar-title-ios {
+    //            font-size: 1em;
+    //        }
+    //        .toolbar-md,
+    //        .toolbar-ios {
+    //            min-height: 30px;
+    //        }
+    //
+    //        .modal-wrapper {
+    //            position: absolute;
+    //            overflow: hidden;
+    //            max-width: 300px;
+    //            border-radius: 5px;
+    //            width: 80vw;
+    //            height: 50vh !important;
+    //            top: 0;
+    //            bottom: 0;
+    //            left: 0;
+    //            right: 0;
+    //            margin: auto;
+    //            border: 0;
+    //            box-shadow: 0 16px 20px rgba(0, 0, 0, .4);
+    //            background-color: #fafafa;
+    //        }
+    //        .toolbar-background {
+    //            background-color: #e53935 !important;
+    //        }
+    //    }
+    .modal-wrapper {
+        position: absolute;
+        overflow: hidden; //        max-width: 300px;
+        max-height: 75vh;
+        border-radius: 5px;
+        width: 80vw; //        height: 40vh;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 0;
+        box-shadow: 0 16px 20px rgba(0, 0, 0, .4);
+        background-color: #fafafa;
+    }
+    .toolbar-background {
+        background-color: #D71E2F !important;
+    }
+    ion-header {
+        text-align: center;
+    }
+    .toolbar-title-md,
+    .toolbar-title-ios {
+        color: white;
+    }
+    .toolbar-md,
+    .toolbar-ios {
+        min-height: 40px !important;
+    }
+}
+
+.centering-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-app.gmaps_cdv .nav-decor {
+    display: none !important;
+}
+
+.red-grid-theme {
+    padding: 5px;
+    background: #e11f1c;
+    color: white;
+}
+
+.blue-grid-theme {
+    padding: 5px;
+    background: #243d8f;
+    color: white;
+}
+
+.green-grid-theme {
+    padding: 5px;
+    background: #32db64;
+    color: white;
+}
+
+.orange-grid-theme {
+    padding: 5px;
+    background: #f75919;
+    color: white;
+}
+
+.grey-grid-theme {
+    padding: 5px;
+    background: #4E4E4E;
+    color: white;
+}
